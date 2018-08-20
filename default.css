@@ -2,7 +2,7 @@ body {
   margin           : auto;
   color            : #432;
   background-color : #3E3E3E;
-  font-family      : 'Raleway',
+  font-family      : 'Open Sans',
                      sans-serif;
 }
 
@@ -26,19 +26,18 @@ header {
 }
 
 h1,
-h2,
-h3 {
+h2 {
   color       : rgb(255, 254, 249);
-  font-family : 'Montserrat',
+}
+h1, h2, h3, h4 {
+  font-family : 'PT Sans',
                 sans-serif;
 }
-
+h3, h4 {
+  color: #432;
+}
 h1 {
   display : inline-block;
-}
-
-h3 {
-  color : #432;
 }
 
 p {
@@ -53,8 +52,10 @@ img {
 }
 
 div {
-  display : inline-block;
-  padding : 15px;
+  display          : inline-block;
+  padding          : 15px;
+  background-color : white;
+  box-shadow       : 2px 2px 6px rgba(63, 58, 48, 0.6);
   /* border: solid 1px black; */
 }
 
@@ -66,10 +67,17 @@ form {
   color                 : rgb(54, 50, 44);
   border                : solid 10px #3CBC8D;
   border-radius         : 10px;
-  background            : rgb(255, 254, 249);
-  box-shadow            : 4px 4px 10px rgb(43, 38, 28);
+  background            : rgb(254, 254, 253);
   grid-gap              : 10px;
   grid-template-columns : auto auto;
+}
+
+*::placeholder {
+  color : white;
+}
+
+textarea::placeholder {
+  color : rgb(205, 204, 200);
 }
 
 input[list],
@@ -82,8 +90,8 @@ input[type=text] {
   padding          : 12px 20px;
   color            : white;
   border           : none;
-  background-color : #3CBC8D;
-  font-family      : 'Raleway',
+  background-color : rgba(60, 187, 141, 0.63);
+  font-family      : 'Open Sans',
                      sans-serif;
   font-size        : 0.9em;
 }
@@ -97,9 +105,9 @@ input[type=text]:focus {
 }
 
 #personal {
-  height     : 90%;
-  box-shadow : 2px 2px 6px rgba(63, 58, 48, 0.6);
-  grid-row   : 1 / 4;
+  background-color : white;
+  box-shadow       : 2px 2px 6px rgba(63, 58, 48, 0.6);
+  grid-row         : 1 / 4;
 }
 
 button {
@@ -128,14 +136,20 @@ button:active {
 }
 
 textarea {
-  width         : 100%;
-  height        : 120px;
-  margin-bottom : 20px;
-  border        : none;
-  outline       : none;
-  box-shadow    : 2px 2px 6px rgba(63, 58, 48, 0.6);
-  font-family   : 'Raleway',
-                  sans-serif;
-  font-size     : 0.9em;
-  resize        : none;
+  width            : 100%;
+  height           : 120px;
+  margin-bottom    : 0;
+  padding          : 5px;
+  border           : none;
+  border           : solid 1px rgb(205, 204, 200);
+  background-color : white;
+  outline          : none;
+  font-family      : 'Open Sans',
+                     sans-serif;
+  font-size        : 0.9em;
+  resize           : none;
+}
+.empty-space {
+  box-shadow: none;
+  height: 50px;
 }
