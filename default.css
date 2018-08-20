@@ -1,0 +1,141 @@
+body {
+  margin           : auto;
+  color            : #432;
+  background-color : #3E3E3E;
+  font-family      : 'Raleway',
+                     sans-serif;
+}
+
+header {
+  text-align : center;
+}
+
+h1 {
+  padding    : 20px 40px;
+  background : #FD9D1E;
+  box-shadow : 5px 5px 15px #193200;
+}
+
+h2 {
+  padding     : 0 20px 20px;
+  font-weight : 300;
+}
+
+header {
+  background-color : #0B5400;
+}
+
+h1,
+h2,
+h3 {
+  color       : rgb(255, 254, 249);
+  font-family : 'Montserrat',
+                sans-serif;
+}
+
+h1 {
+  display : inline-block;
+}
+
+h3 {
+  color : #432;
+}
+
+p {
+  font-family : 'Montserrat',
+                sans-serif;
+}
+
+img {
+  width          : 50px;
+  padding-right  : 30px;
+  vertical-align : text-bottom;
+}
+
+div {
+  display : inline-block;
+  padding : 15px;
+  /* border: solid 1px black; */
+}
+
+form {
+  display               : grid;
+  width                 : 70%;
+  margin                : 50px auto;
+  padding               : 20px;
+  color                 : rgb(54, 50, 44);
+  border                : solid 10px #3CBC8D;
+  border-radius         : 10px;
+  background            : rgb(255, 254, 249);
+  box-shadow            : 4px 4px 10px rgb(43, 38, 28);
+  grid-gap              : 10px;
+  grid-template-columns : auto auto;
+}
+
+input[list],
+input[type=email],
+input[type=number],
+input[type=text] {
+  box-sizing       : border-box;
+  width            : 100%;
+  margin           : 8px 0;
+  padding          : 12px 20px;
+  color            : white;
+  border           : none;
+  background-color : #3CBC8D;
+  font-family      : 'Raleway',
+                     sans-serif;
+  font-size        : 0.9em;
+}
+
+input[list]:focus,
+input[type=email]:focus,
+input[type=number]:focus,
+input[type=text]:focus {
+  color            : #3CBC8D;
+  background-color : white;
+}
+
+#personal {
+  height     : 90%;
+  box-shadow : 2px 2px 6px rgba(63, 58, 48, 0.6);
+  grid-row   : 1 / 4;
+}
+
+button {
+  display          : inline-block;
+  margin           : 5px 0;
+  margin-top       : 30px;
+  padding          : 15px 32px;
+  color            : white;
+  opacity          : 0.9;
+  border           : none;
+  background-color : #008CBA;
+  outline          : none;
+  text-align       : center;
+  text-decoration  : none;
+  font-size        : 16px;
+  grid-column      : 1 / 3;
+  cursor           : pointer;
+}
+
+button:hover {
+  opacity : 1;
+}
+
+button:active {
+  background-color : #FD9D1E;
+}
+
+textarea {
+  width         : 100%;
+  height        : 120px;
+  margin-bottom : 20px;
+  border        : none;
+  outline       : none;
+  box-shadow    : 2px 2px 6px rgba(63, 58, 48, 0.6);
+  font-family   : 'Raleway',
+                  sans-serif;
+  font-size     : 0.9em;
+  resize        : none;
+}

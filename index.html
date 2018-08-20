@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300|Raleway:300" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="default.css" />
+
+    <title>Free Code Camp Survey</title>
+</head>
+<body>
+    <header>
+
+        <h1><img src="FCC-logo.png" />Free Code Camp Survey</h1>
+        <h2>Let us know how we can improve Free Code Camp</h2>
+    </header>
+
+<form id="survey-form">
+
+    <div id="personal">
+        <p>
+            Required information
+        </p>
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Your name" required/><br />
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="you@example.mail" required /><br /> <!-- validate input -->
+        <label for="number">Age&nbsp;</label>
+        <input type="number" id="number" min="10" max="99" placeholder="Age in numbers" required /><br /> <!-- validate number, use min max attributes -->
+
+        <p>Which option describes your current role?</p>
+        <input list="roles" placeholder="Select an option" required />
+        <datalist id="roles">
+          <option value="Student">
+          <option value="Full time job">
+          <option value="Full time learner">
+          <option value="Prefer not to say">
+          <option value="Other">
+        </datalist>
+
+        <p>
+            What do you like most in FCC?
+        </p>
+        <input list="likes" placeholder="Select an option" required />
+        <datalist id="likes">
+          <option value="Challenges">
+          <option value="Projects">
+          <option value="Community">
+          <option value="Open source">
+          <option value="All above">
+        </datalist>
+    </div> <!-- eof personal -->
+
+    <div id="improve">
+        <p>
+            Which of the following things do you think could be improved?
+        </p>
+        <input type="checkbox" name="front-end-projects" value="Front-end Projects"> Front-end Projects<br>
+        <input type="checkbox" name="back-end-projects" value="Back-end Projects"> Back-end Projects<br>
+        <input type="checkbox" name="data-visualization" value="Data Visualization"> Data Visualization<br>
+        <input type="checkbox" name="challenges" value="Challenges"> Challenges<br>
+        <input type="checkbox" name="open-source-community" value="Open Source Community"> Open Source Community<br>
+        <input type="checkbox" name="gitter-help-rooms" value="Gitter help rooms"> Gitter help rooms<br>
+        <input type="checkbox" name="videos" value="Videos"> Videos<br>
+        <input type="checkbox" name="city-meetups" value="City Meetups"> City Meetups<br>
+        <input type="checkbox" name="wiki" value="Wiki"> Wiki<br>
+        <input type="checkbox" name="forum" value="Forum"> Forum<br>
+        <input type="checkbox" name="additional-courses" value="Additional Courses"> Additional Courses<br>
+    </div> <!-- eof improve -->
+
+    <div id="recommend">
+        <p>
+            Would you recommend us to your friends?
+        </p>
+        <label for="definately">Definately</label>
+        <input name="score" type="radio" id="definately" value="Definately" />
+        <label for="maybe">Maybe</label>
+        <input name="score" type="radio" id="maybe" value="Maybe" />
+        <label for="notsure">Not sure</label>
+        <input name="score" type="radio" id="notsure" value="Not sure" />
+    </div> <!-- eof recommend -->
+
+
+    <div id="suggestions">
+    <p>
+        Do you have any comments or suggestions?
+    </p>
+    <textarea id="message" placeholder="Enter your comments here..."></textarea>
+    </div> <!-- eof suggestions -->
+<button type="submit" value="Send" />Send</button>
+
+</form>
+
+</body>
+</html>
