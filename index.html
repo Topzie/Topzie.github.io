@@ -3,7 +3,7 @@
 
 <head>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|PT+Sans" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="default.css" />
+    <link rel="stylesheet" type="text/css" href="alt1.css" />
 
     <title>Free Code Camp Survey</title>
 </head>
@@ -55,28 +55,28 @@
         <p>
             <h4>Which of the following things do you think could be improved?</h4>
         </p>
-        <input type="checkbox" name="front-end-projects" value="Front-end Projects"> Front-end Projects<br>
-        <input type="checkbox" name="back-end-projects" value="Back-end Projects"> Back-end Projects<br>
-        <input type="checkbox" name="data-visualization" value="Data Visualization"> Data Visualization<br>
-        <input type="checkbox" name="challenges" value="Challenges"> Challenges<br>
-        <input type="checkbox" name="open-source-community" value="Open Source Community"> Open Source Community<br>
-        <input type="checkbox" name="gitter-help-rooms" value="Gitter help rooms"> Gitter help rooms<br>
-        <input type="checkbox" name="videos" value="Videos"> Videos<br>
-        <input type="checkbox" name="city-meetups" value="City Meetups"> City Meetups<br>
-        <input type="checkbox" name="wiki" value="Wiki"> Wiki<br>
-        <input type="checkbox" name="forum" value="Forum"> Forum<br>
-        <input type="checkbox" name="additional-courses" value="Additional Courses"> Additional Courses<br>
+        <label><input type="checkbox" name="front-end-projects" value="Front-end Projects"> Front-end Projects</label><br>
+        <label><input type="checkbox" name="back-end-projects" value="Back-end Projects"> Back-end Projects</label><br>
+        <label><input type="checkbox" name="data-visualization" value="Data Visualization"> Data Visualization</label><br>
+        <label><input type="checkbox" name="challenges" value="Challenges"> Challenges</label><br>
+        <label><input type="checkbox" name="open-source-community" value="Open Source Community"> Open Source Community</label><br>
+        <label><input type="checkbox" name="gitter-help-rooms" value="Gitter help rooms"> Gitter help rooms</label><br>
+        <label><input type="checkbox" name="videos" value="Videos"> Videos</label><br>
+        <label><input type="checkbox" name="city-meetups" value="City Meetups"> City Meetups</label><br>
+        <label><input type="checkbox" name="wiki" value="Wiki"> Wiki</label><br>
+        <label><input type="checkbox" name="forum" value="Forum"> Forum</label><br>
+        <label><input type="checkbox" name="additional-courses" value="Additional Courses"> Additional Courses</label><br>
     </div> <!-- eof improve -->
 
     <div id="recommend">
         <p>
             <h4>Would you recommend us to your friends?</h4>
         </p>
-        <label for="definately">Definately</label>
+        <label for="definately" class="lspace">Definately</label>
         <input name="score" type="radio" id="definately" value="Definately" />
-        <label for="maybe">Maybe</label>
+        <label for="maybe" class="lspace">Maybe</label>
         <input name="score" type="radio" id="maybe" value="Maybe" />
-        <label for="notsure">Not sure</label>
+        <label for="notsure" class="lspace">Not sure</label>
         <input name="score" type="radio" id="notsure" value="Not sure" />
     </div> <!-- eof recommend -->
 
@@ -87,7 +87,7 @@
     </p>
     <textarea id="message" placeholder="Enter your comments here..."></textarea>
     </div> <!-- eof suggestions -->
-<button type="submit" value="Send" />Send</button>
+<button type="submit" value="Send" >Send</button>
 
 </form>
 
