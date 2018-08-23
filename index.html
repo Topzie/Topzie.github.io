@@ -3,6 +3,7 @@
 
 <head>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|PT+Sans" rel="stylesheet">
+
     <link rel="stylesheet" type="text/css" href="default.css" />
 
     <title>Free Code Camp Survey</title>
@@ -13,7 +14,7 @@
         <h1><img src="FCC-logo.png" />Free Code Camp Survey</h1>
         <h2>Let us know how we can improve Free Code Camp</h2>
     </header>
-
+<div class="wrapper">
 <form id="survey-form">
 
     <div id="personal">
@@ -24,30 +25,34 @@
         <input type="email" id="email" placeholder="you@example.mail" required /><br /> <!-- validate input -->
         <label for="number">Age&nbsp;</label>
         <input type="number" id="number" min="10" max="99" placeholder="Age in numbers" required /><br /> <!-- validate number, use min max attributes -->
+
 <div class="empty-space">
 
 </div>
-        <p><h4>Which option describes your current role?</h4>
-        <input list="roles" placeholder="Select an option" required />
-        <datalist id="roles">
-          <option value="Student">
-          <option value="Full time job">
-          <option value="Full time learner">
-          <option value="Prefer not to say">
-          <option value="Other">
-        </datalist>
 
+        <p>
+            <h4>Which option describes your current role?</h4>
+
+            <select id="roles" required>
+              <option value="" disabled selected>Select an option</option>
+              <option value="student">Student </option>
+              <option value="full-time-job">Full time job</option>
+              <option value="full=time-learner">Full time learner</option>
+              <option value="prefer-not-to-say">Prefer not to say</option>
+              <option value="other">Other</option>
+            </select>
 
             <h4>What do you like most in FCC?</h4>
 
-        <input list="likes" placeholder="Select an option" required />
-        <datalist id="likes">
-          <option value="Challenges">
-          <option value="Projects">
-          <option value="Community">
-          <option value="Open source">
-          <option value="All above">
-        </datalist>
+
+            <select id="likes" required>
+                <option value="" disabled selected>Select an option</option>
+                <option value="challenges">Challenges</option>
+                <option value="projects">Projects</option>
+                <option value="community">Community</option>
+                <option value="open-source">Open Source</option>
+                <option value="all-above">All Above</option>
+            </select>
         </p>
     </div> <!-- eof personal -->
 
@@ -55,29 +60,34 @@
         <p>
             <h4>Which of the following things do you think could be improved?</h4>
         </p>
-        <label><input type="checkbox" name="front-end-projects" value="Front-end Projects"> Front-end Projects</label><br>
-        <label><input type="checkbox" name="back-end-projects" value="Back-end Projects"> Back-end Projects</label><br>
-        <label><input type="checkbox" name="data-visualization" value="Data Visualization"> Data Visualization</label><br>
-        <label><input type="checkbox" name="challenges" value="Challenges"> Challenges</label><br>
-        <label><input type="checkbox" name="open-source-community" value="Open Source Community"> Open Source Community</label><br>
-        <label><input type="checkbox" name="gitter-help-rooms" value="Gitter help rooms"> Gitter help rooms</label><br>
-        <label><input type="checkbox" name="videos" value="Videos"> Videos</label><br>
-        <label><input type="checkbox" name="city-meetups" value="City Meetups"> City Meetups</label><br>
-        <label><input type="checkbox" name="wiki" value="Wiki"> Wiki</label><br>
-        <label><input type="checkbox" name="forum" value="Forum"> Forum</label><br>
-        <label><input type="checkbox" name="additional-courses" value="Additional Courses"> Additional Courses</label><br>
-    </div> <!-- eof improve -->
+            <label class="indent"><input type="checkbox" name="front-end-projects" value="Front-end Projects"> Front-end Projects</label><br>
+            <label class="indent"><input type="checkbox" name="back-end-projects" value="Back-end Projects"> Back-end Projects</label><br>
+            <label  class="indent"><input type="checkbox" name="data-visualization" value="Data Visualization"> Data Visualization</label><br>
+            <label  class="indent"><input type="checkbox" name="challenges" value="Challenges"> Challenges</label><br>
+            <label  class="indent"><input type="checkbox" name="open-source-community" value="Open Source Community"> Open Source Community</label><br>
+            <label  class="indent"><input type="checkbox" name="gitter-help-rooms" value="Gitter help rooms"> Gitter help rooms</label><br>
+            <label  class="indent"><input type="checkbox" name="videos" value="Videos"> Videos</label><br>
+            <label  class="indent"><input type="checkbox" name="city-meetups" value="City Meetups"> City Meetups</label><br>
+            <label  class="indent"><input type="checkbox" name="wiki" value="Wiki"> Wiki</label><br>
+            <label  class="indent"><input type="checkbox" name="forum" value="Forum"> Forum</label><br>
+            <label  class="indent"><input type="checkbox" name="additional-courses" value="Additional Courses"> Additional Courses</label><br>
+
+
+
+        </div> <!-- eof improve -->
 
     <div id="recommend">
         <p>
             <h4>Would you recommend us to your friends?</h4>
         </p>
-        <label for="definately" class="lspace">Definately</label>
-        <input name="score" type="radio" id="definately" value="Definately" />
-        <label for="maybe" class="lspace">Maybe</label>
-        <input name="score" type="radio" id="maybe" value="Maybe" />
-        <label for="notsure" class="lspace">Not sure</label>
-        <input name="score" type="radio" id="notsure" value="Not sure" />
+
+                <label  class="indent" for="definately">Definately </label>
+                <input name="score" type="radio" id="definately" value="Definately" />
+                <label  class="indent"el for="maybe" class="lspace">Maybe </label>
+                <input name="score" type="radio" id="maybe" value="Maybe" />
+                <label  class="indent"el for="notsure" class="lspace">Not sure </label>
+                <input name="score" type="radio" id="notsure" value="Not sure" />
+
     </div> <!-- eof recommend -->
 
 
@@ -87,9 +97,15 @@
     </p>
     <textarea id="message" placeholder="Enter your comments here..."></textarea>
     </div> <!-- eof suggestions -->
+
 <button type="submit" value="Send" >Send</button>
 
 </form>
+</div>
+<footer>
 
+        Coded by Topzie - <a href="https://github.com/Topzie/FCC-survey">My repo at Github</a>
+
+</footer>
 </body>
 </html>
