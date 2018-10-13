@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Dosis:300|Open+Sans+Condensed:300|Titillium+Web:200|Barlow:400,600" rel="stylesheet">
+    </link>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href="grid3.css" rel="stylesheet" type="text/css">
+    </link>
+    <title>Free Code Camp Survey</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 id="title">freeCodeCamp Survey<i class="fab fa-free-code-camp"></i></h1>
+        <p id="description" class="white-text">Let us know how we can improve Free Code Camp</p>
+      </header>
+      <form id="survey-form">
+        <div class="personal">
+          <h4>First, tell us something about you</h4>
+          <div class="item-group">
+            <label for="name" id="name-label">Name</label><input id="name" type="text" placeholder="Your name" required="required">
+          </div>
+          <div class="item-group">
+            <label for="email" id="email-label">Email</label><input id="email" type="email" placeholder="mail@example.mail" required>
+          </div>
+          <div class="item-group">
+            <label for="number" id="number-label">Age</label><input id="number" min="10" max="99" type="number" placeholder="Your age in numbers">
+          </div>
+        </div>
+        <div class="personal2">
+          <h4>Which option describes your current role?</h4>
+          <select id="dropdown" name="role" required>
+            <option value disabled selected> Select an option</option>
+            <option value="student">Student</option>
+            <option value="full-time-job">Full time job</option>
+            <option value="full=time-learner">Full time learner</option>
+            <option value="prefer-not-to-say">Prefer not to say</option>
+            <option value="other">Other</option>
+          </select>
+          <h4>What do you like most in FCC?</h4>
+          <select name="likes" required>
+            <option value disabled selected> Select an option</option>
+            <option value="challenges">Challenges</option>
+            <option value="projects">Projects</option>
+            <option value="community">Community</option>
+            <option value="open-source">Open Source</option>
+            <option value="all-above">All Above</option>
+          </select>
+        </div>
+        <div class="improve">
+          <h4> If any, which of the following things do you think could be improved?</h4>
+          <label>
+            <input name="front-end-projects" type="checkbox" value="Front-end Projects" /><span>Front-end Projects</span>
+          </label>
+          <label>
+            <input name="back-end-projects" type="checkbox" value="Back-end Projects" /><span>Back-end Projects</span>
+          </label>
+          <label>
+            <input name="data-visualization" type="checkbox" value="Data Visualization" /><span>Data Visualization</span>
+          </label>
+          <label>
+            <input name="challenges" type="checkbox" value="Challenges" /><span>Challenges</span>
+          </label>
+          <label>
+            <input name="open-source-community" type="checkbox" value="Open Source Community" /><span>Open Source Community</span>
+          </label>
+          <label>
+            <input name="gitter-help-rooms" type="checkbox" value="Gitter help rooms" /><span>Gitter help rooms</span>
+          </label>
+          <label>
+            <input name="videos" type="checkbox" value="Videos" /><span>Videos</span>
+          </label>
+          <label>
+            <input name="city-meetups" type="checkbox" value="City Meetups" /><span>City Meetups</span>
+          </label>
+          <label>
+            <input name="wiki" type="checkbox" value="Wiki" /><span>Wikipedia</span>
+          </label>
+          <label>
+            <input name="forum" type="checkbox" value="Forum" /><span>Forum</span>
+          </label>
+          <label>
+            <input name="additional-courses" type="checkbox" value="AdditionalCourses" /><span>Additional Courses</span>
+          </label>
+        </div>
+        <div class="recommend">
+          <h4>Would you recommend us to your friends?</h4>
+          <label>
+            <input name="score" type="radio" value="Yes" /><span>Yes</span></label>
+          <label>
+            <input name="score" type="radio" value="No" /><span>No</span></label>
+          <label>
+            <input name="score" type="radio" value="Maybe" /><span>Maybe</span></label>
+        </div>
+        <div class="suggestions">
+          <h4>Your comments or suggestions</h4>
+          <textarea rows=3 cols=30 id="message" name="message" placeholder="If you wish, you can leave your comments here..."></textarea>
+        </div>
+        <div class="submit">
+          <button id="submit" type="submit" value="Send">Send </button>
+        </div>
+      </form>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+
+</html>
