@@ -265,7 +265,22 @@ p i.big {
   display: grid;
   grid-template-columns: 5em auto;
 }
+.video-container {
+  position: relative;
+  overflow: hidden;
+  height: 0;
+  padding-bottom: 56.25%;
+}
 
+.video-container iframe,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+width: 100%;
+height: 100%;
+  max-width: 100%;
+}
 div.anchor {
   display: hidden;
   height: 40px;
@@ -313,7 +328,7 @@ div.card {
 }
 
 .cardbox {
-  background: url(" http://api.thumbr.it/whitenoise-361x370.png?background=bfa98eff&noise=fcf9fc&density=21&opacity=24");
+  background: url("http://api.thumbr.it/whitenoise-361x370.png?background=bfa98eff&noise=fcf9fc&density=21&opacity=24");
 }
 
 .shadow {
@@ -353,12 +368,12 @@ footer {
 h3.black-bg {
   background-color: rgba(69, 52, 31, .7);
   color: white;
-  margin: 0;
+  margin: 0!important;
   padding-top: .4em;
   padding-bottom: .4em;
 }
 
-div #prices .card {
+#prices .card {
   padding: 0;
   border-radius: 0 0 5px 5px;
   text-align: center;
