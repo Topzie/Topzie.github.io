@@ -1,0 +1,356 @@
+@media only screen and (min-width: 300px) {
+.vh100 {
+    height: auto;
+  }
+}
+@media  only screen and (min-width: 600px) {
+ .vh100 {
+    margin: 0 auto;
+    height: 100vh;
+  }
+}
+
+html, body {
+  width: 100%;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  overflow: scroll;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #4A607B;
+  background: url(" http://api.thumbr.it/whitenoise-361x370.png?background=bfa98eff&noise=fcf9fc&density=21&opacity=24");
+  text-align: left;
+}
+
+div {
+  margin: 0 auto;
+  padding: .3em .8em;
+  /*  border: 1px solid black; */
+  /*  background-color: white; */
+}
+
+div.anchor {
+  visibility: hidden;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  height: 60px;
+  width: 100%;
+  z-index: 1;
+}
+
+.hotpink {
+  background-color: hotpink;
+}
+
+.pink {
+  background-color: pink;
+}
+
+a {
+
+  text-decoration: none;
+}
+
+ul {
+
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#navbar li {
+  background-color: white;
+  text-align: right;
+  padding: .3em 1em;
+  font-variant-caps: all-petite-caps;
+}
+
+#header-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 200px;
+  margin-left: 1.5em;
+  height: auto;
+}
+
+#navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  justify-items: flex-end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-right: 1em;
+}
+
+.head-img {
+  text-align: center;
+  height: 100vh;
+  background-image: url("https://i.postimg.cc/W3hzQ9jr/light-bulb-3104355-1920.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+/*.container > div {
+  margin: 1em auto;
+} */
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.flexbox-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  /*   border: solid 4px pink; */
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+  font-variant-caps: all-small-caps;
+}
+body {
+  font-family: 'Fira Sans', sans-serif;
+}
+h1 {
+
+  color: hotpink;
+  padding-left: 2.4em;
+  padding-right: 2.4em;
+  padding-bottom: 0;
+  margin-top: 1em;
+  margin-bottom: 0;
+}
+div form {
+  margin-bottom: 4em;
+}
+.blend {
+  background-blend-mode: multiply;
+  background: rgba(69, 52, 31, 0.8);
+}
+
+h3, h6, .far, .fas {
+  color: hotpink;
+}
+
+blockquote::before {
+
+  content: open-quote;
+}
+
+blockquote::after {
+
+  content: close-quote
+}
+
+h2., h3 {
+  margin-top: .3em;
+  margin-bottom: .2em;
+}
+h2 {
+  padding: 1em 2em;
+  color:white;
+  background-color: black;
+border-color: silver;
+  border-style: groove;
+}
+p, .fs8 {
+  font-size: .8em;
+}
+.big {
+  font-size: 1.2em;
+}
+.em3 {
+  font-size: 3em;
+}
+div.anchor {
+  display: hidden;
+  height: 40px;
+}
+
+.flexbox-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.card {
+  display: -ms-grid;
+  display: grid;
+  /*  border: .1em solid grey;*/
+  margin: 1em;
+  -webkit-box-shadow: -1px 1px 2px rgba(107, 109, 110, 0.4), 2px 3px 3px rgba(107, 109, 110, 0.67);
+          box-shadow: -1px 1px 2px rgba(107, 109, 110, 0.4), 2px 3px 3px rgba(107, 109, 110, 0.67);
+  margin-bottom: 3em;
+  background-color: white;
+}
+.card h3 {
+  text-align: center;
+}
+
+div.card {
+  border: none;
+}
+
+.card>img {
+  max-width: 100%;
+  height: auto;
+}
+
+.rounded-borders {
+
+  border-radius: 5px;
+}
+
+.cardbox {
+  background: url(" http://api.thumbr.it/whitenoise-361x370.png?background=bfa98eff&noise=fcf9fc&density=21&opacity=24");
+}
+
+.shadow {
+  -webkit-box-shadow: 0px 6px 8px rgba(33, 31, 31, 0.35);
+          box-shadow: 0px 6px 8px rgba(33, 31, 31, 0.35);
+}
+
+.flexrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+footer {
+  -webkit-box-shadow: -2px -2px 9px rgba(33, 31, 31, 0.35);
+          box-shadow: -2px -2px 9px rgba(33, 31, 31, 0.35);
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+.white {
+  background: white;
+}
+.wrap {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+label {
+  color: hotpink;
+}
+.vh100 {
+
+  -webkit-box-shadow:none;
+
+          box-shadow:none;
+}
+.video-container {
+  position: relative;
+  overflow: hidden;
+  height: 0;
+  padding-bottom: 56.25%;
+}
+
+.video-container iframe,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+width: 100%;
+height: 100%;
+  max-width: 100%;
+}
+.fb2 {
+  -ms-flex-preferred-size: 0;
+      flex-basis: 0;
+  -webkit-box-flex:300px;
+      -ms-flex:300px;
+          flex:300px;
+}.fb1 {
+  -ms-flex-preferred-size: 0;
+      flex-basis: 0;
+  -webkit-box-flex:200px;
+      -ms-flex:200px;
+          flex:200px;
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.mtb2 {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+.ml-em1 {
+  margin-left: 2em;
+}
+.fb180 {
+  -ms-flex-preferred-size: 180px;
+      flex-basis: 180px;
+
+}
