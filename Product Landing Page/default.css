@@ -83,11 +83,11 @@ ul.topnav li a {
   font-variant-caps: all-small-caps;
 }
 
-ul.topnav li a:hover, ul.topnav li a:hover.active {
+ul.topnav li a:hover, ul.topnav li a:hover.home {
   background-color: #111;
 }
 
-ul.topnav li a.active {
+ul.topnav li a.home {
   background-color: #4CAF50;
 }
 
@@ -134,7 +134,8 @@ a {
 .grid-container {
   display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  -ms-grid-rows:  repeat(auto-fit,minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
 }
 
 h1, h2, h3, h4 {
@@ -177,13 +178,18 @@ input {
   color: white;
   text-decoration: none;
   border: none;
+  -webkit-transition: 0;
+  -o-transition: 0;
   transition: 0;
   transition-duration: .5s;
 }
 
 #submit:hover {
   background-color: orange;
+  -webkit-transition: 1;
+  -o-transition: 1;
   transition: 1;
+
 }
 
 .blend {
@@ -216,7 +222,7 @@ h3 {
   margin: 0.3em 0 .2em 0;
 }
 
-h2., far {
+h2 {
   margin-top: .3em;
   margin-bottom: .2em
 }
@@ -263,24 +269,10 @@ p i.big {
 
 #feat {
   display: grid;
+  -ms-grid-rows: 5em auto;
   grid-template-columns: 5em auto;
 }
-.video-container {
-  position: relative;
-  overflow: hidden;
-  height: 0;
-  padding-bottom: 56.25%;
-}
 
-.video-container iframe,
-.video-container embed {
-  position: absolute;
-  top: 0;
-  left: 0;
-width: 100%;
-height: 100%;
-  max-width: 100%;
-}
 div.anchor {
   display: hidden;
   height: 40px;
@@ -389,37 +381,34 @@ h3.black-bg {
   box-shadow: none;
 }
 
-#video {
+.video-container {
   position: relative;
   overflow: hidden;
   height: 0;
   padding-bottom: 56.25%;
 }
 
-#video iframe,
-#video embed {
+.video-container iframe,
+.video-container embed {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+width: 100%;
+height: 100%;
   max-width: 100%;
 }
-
 .fb2 {
   -ms-flex-preferred-size: 0;
-  flex-basis: 0;
-  -webkit-box-flex: 300px;
-  -ms-flex: 300px;
-  flex: 300px;
-}
-
-.fb1 {
+      flex-basis: 0;
+  -webkit-box-flex:300px;
+      -ms-flex:300px;
+          flex:300px;
+}.fb1 {
   -ms-flex-preferred-size: 0;
-  flex-basis: 0;
-  -webkit-box-flex: 200px;
-  -ms-flex: 200px;
-  flex: 200px;
+      flex-basis: 0;
+  -webkit-box-flex:200px;
+      -ms-flex:200px;
+          flex:200px;
 }
 
 .button {
@@ -463,8 +452,9 @@ button {
   display: inline-block;
   font-size: 16px;
   margin: 4px 2px;
-  -webkit-transition-duration: 0.4s;
-  Safari transition-duration: 0.4s;
+-webkit-transition-duration: 0.4s;
+-o-transition-duration: 0.4s;
+transition-duration: 0.4s;
   cursor: pointer;
   margin-top: 1.5em;
   margin-bottom: 1em;
@@ -509,7 +499,10 @@ button:focus {
   position: absolute;
   z-index: 1;
   opacity: 0;
+  -webkit-transition: opacity 1s;
+  -o-transition: opacity 1s;
   transition: opacity 1s;
+
 }
 
 .tooltip:hover .tooltiptext {
