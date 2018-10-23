@@ -1,8 +1,4 @@
 @media only screen and (max-width: 600px) {
-  #header-img {
-    width: 30vw;
-    min-width: 150px;
-  }
 
   h1 {
     letter-spacing: normal;
@@ -29,12 +25,6 @@
 @media only screen and (min-width: 601px) {
   h1 {
     letter-spacing: .5em;
-  }
-
-  #header-img {
-    width: 15vw;
-    min-width: 150px;
-    max-width: 250px;
   }
 
   ul.topnav li a {
@@ -106,8 +96,8 @@ ul.topnav li.left {
 }
 
 #header-img {
-  width: 25vw;
-  padding-left: 1em;
+  width: 150px;
+  padding-left: 1.5em;
   padding-top: 1em;
   height: auto;
   margin: 0;
