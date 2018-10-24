@@ -268,9 +268,11 @@ p i.big {
 }
 
 #feat {
+ margin: 2em;
   display: grid;
   -ms-grid-rows: 5em auto;
   grid-template-columns: 5em auto;
+
 }
 
 div.anchor {
