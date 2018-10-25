@@ -1,0 +1,186 @@
+html, body {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  padding-top: 1em;
+}
+
+p {
+  max-width: 50em;
+  line-height: 1.5;
+}
+li {
+  line-height: .8em;
+}
+.code-block {
+  max-width: 45em;
+}
+.inline-block {
+    line-height: 1.3em;
+}
+
+#text-link {
+  margin: 0;
+  padding: 25px 0;
+  letter-spacing: .2em;
+  font-size: 1.6em;
+/*   margin:0;
+padding: 1em; */
+  background-color: #FDFFFC;
+  color: #011627 /* hotpink */;
+  border: 2px solid #011627;
+  text-align: center;
+}
+
+#navbar {
+  margin: 0;
+  padding: 0;
+  width: 260px;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  background-color: #011627;
+
+}
+
+#navbar a {
+  display: block;
+  color: #FDFFFC;
+  padding: 25px;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+#navbar a:hover {
+  background-color: #555;
+  /* color: ##FDFFFC; */
+}
+
+main {
+  margin-left: 260px;
+  padding: 25px;
+  background-color: #FEFCFD:
+}
+
+
+.code-block {
+  display:block;
+  padding: 10px;
+  margin: 20px;
+  overflow: auto;
+  background-color: rgba(155, 164, 163, 0.1);
+}
+code {
+  font-size: .8em;
+  font-family: 'IBM Plex Mono', monospace;
+}
+.inline-block {
+  display: inline-block;
+  margin: 5px;
+  border-left: 1px solid pink;
+  padding: 6px 10px 20px 20px;
+}
+
+.w200 {
+  width: 200px;
+}
+.red {
+  color: red;
+}
+.purple {
+  color: purple;
+}
+.blue {
+  color: RoyalBlue;
+}
+.blue2 {
+  color: SteelBlue;
+}
+.green {
+  color: ForestGreen;
+}
+.pink {
+  color: pink;
+}
+.brown {
+  color: brown;
+}
+.indent {
+  margin-left: 15px;
+}
+footer {
+  display: flex;
+  flex-direction: row;
+flex-wrap: wrap;
+justify-content: flex-end;
+margin:0;
+  font-size: .7em;
+
+}
+footer p {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0 1em 1em 0;
+}
+
+footer a {
+  color: SteelBlue;
+  padding-left: 8px;
+}
+footer a:hover {
+  color: orange;
+}
+.nav-link {
+  padding-bottom: .8em;
+}
+@media screen and (max-width: 700px) {
+  #text-link {
+    display: none;
+    padding-left: 0;
+  }
+  #navbar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  #navbar, #navbar a {
+    float: left;
+      padding: 10px 25px;
+    margin-left: 0;
+
+  }
+
+  main {
+    margin: 0;
+    padding: 25px;
+  }
+}
+
+@media screen and (max-width: 625px) {
+  #text-link {
+    padding: 0 0 .2em 0;
+  }
+  #navbar, #navbar a  {
+font-size: 1em;
+    text-align: center;
+    float: none;
+  }
+ #navbar {
+   padding: 10px 0;
+ }
+ #navbar a {
+   padding:0;
+ }
+}
