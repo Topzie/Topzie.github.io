@@ -139,7 +139,7 @@ footer {
   justify-content: center;
   margin: 0 0 0 260px;
   font-size: .7em;
-background-color: rgba(226, 217, 199, 0.29);
+  background-color: rgba(226, 217, 199, 0.29);
 }
 
 footer p {
@@ -180,22 +180,22 @@ footer a:hover {
     padding: 0;
     margin-left: 0;
   }
-#navbar a {
-  padding: 10px 25px;
-}
+
+  #navbar a {
+    padding: 10px 25px;
+  }
+
   main {
     margin: 0;
     padding: 25px;
   }
+
   footer {
     margin: 0;
   }
 }
 
 @media screen and (max-width: 425px) {
-/*   #topic {
-  margin-bottom:1em;
-} */
   #text-link {
     padding: 0;
   }
@@ -205,14 +205,15 @@ footer a:hover {
     text-align: center;
     float: none;
   }
-  #navbar {
-    padding: 0 ;
 
+  #navbar {
+    padding: 0;
   }
 
   #navbar a {
-      padding: 0 0 .3em 0;
+    padding: 0 0 .3em 0;
   }
+
   footer {
     margin: 0;
   }
